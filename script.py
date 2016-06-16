@@ -224,3 +224,7 @@ for i in range(100):
 
 fout.close()
 
+## GET INTERSECTING CUSTOMERS AMONG THE RANKING LISTS
+top_purchase = sort_uid_tran[-100:]
+top_ntran = sort_uid[-100:]
+top_all = list(set(top_purchase) & set(top_ntran))
